@@ -1,6 +1,6 @@
 import yaml
 
-class GeneratorController(object):
+class GeneratorYml(object):
 
     def generateJobYml(self, job_object):
         path_to_file = 'generate_yml_k8s/templates/job.yml'
