@@ -1,0 +1,26 @@
+apiVersion: batch/v1
+kind: kind
+metadata:
+  labels:
+    app: app_name
+  name: app_name
+  namespace: namespace
+spec:
+  ttlSecondsAfterFinished: 0
+  template:
+    spec:
+      containers:
+        - name: app_name
+          image: image
+          imagePullPolicy: IfNotPresent
+          env: 
+          {env}
+          resources:
+            requests:
+              memory: request_memory
+              cpu: request_cpu
+            limits:
+              memory: limit_memory
+              cpu: limit_cpu
+          ports:
+            - containerPort: port
