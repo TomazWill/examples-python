@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "name": "test-pod"
+    },
+    "spec": {
+        "containers": [
+            {
+                "name": "test-container",
+                "image": "nginx",
+                "env": [
+                    {
+                        "name": "ENV",
+                        "value": "dev"
+                    }
+                ]
+            }
+        ]
+    },
+    "apiVersion": "v1",
+    "kind": "Pod"
+}
