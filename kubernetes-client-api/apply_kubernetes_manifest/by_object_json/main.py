@@ -1,4 +1,4 @@
-import yaml, json, sys, tempfile, os
+import yaml, json, tempfile, os
 from kubernetes import client, config, utils
 
 
@@ -40,7 +40,7 @@ try:
 finally:
     pass # For tests
     # os.remove(path_tmp_file)
-    
+
 # ------------------------------------------------------------
 
 print(f"\n\njson.dumps::: {my_object_json}")

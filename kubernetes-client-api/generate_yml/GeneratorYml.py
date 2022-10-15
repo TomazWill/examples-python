@@ -12,7 +12,3 @@ class GeneratorYml(object):
         )
         
         return template_final
-    
-    
-    
-    
